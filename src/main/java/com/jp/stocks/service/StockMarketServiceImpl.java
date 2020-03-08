@@ -12,7 +12,9 @@ import com.jp.stocks.exception.StockServiceException;
 import lombok.Data;
 import org.apache.commons.lang3.NotImplementedException;
 import org.apache.commons.lang3.StringUtils;
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
@@ -29,7 +31,7 @@ import java.util.stream.Collectors;
 @Data
 public class StockMarketServiceImpl implements StockMarketService {
 
-    private static final Logger logger = Logger.getLogger(MethodHandles.lookup().lookupClass());
+    private static final Logger logger = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
     @Autowired
     InstrumentDao<Stock> instrumentDao;
