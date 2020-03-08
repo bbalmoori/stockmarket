@@ -18,7 +18,7 @@ public interface InstrumentDao<T extends Instrument> {
     /**
      * Persists a given instrument
      *
-     * @Param instrument
+     * @param instrument
      *      Instrument to save, this can be stock, fx or any other financial instrument
      *
      * @return boolean if saved successfully
@@ -31,7 +31,7 @@ public interface InstrumentDao<T extends Instrument> {
     /**
      * Delete a given instrument
      *
-     * @Param instrument
+     * @param instrument
      *      Instrument to delete, this can be stock, fx or any other financial instrument
      *
      *  @return boolean if removed successfully
@@ -48,7 +48,7 @@ public interface InstrumentDao<T extends Instrument> {
     /**
      * Find a instrument for given ticker
      *
-     * @Param instrument
+     * @param ticker
      *      Instrument to find, this can be stock, fx or any other financial instrument
      *
      *  @return T if found
@@ -65,8 +65,7 @@ public interface InstrumentDao<T extends Instrument> {
     /**
      * Find all instruments
      *
-     *
-     *  @return List<T> if found
+     *  @return List if found
      *
      * @throws DaoException
      *      in case of any connection issues or cache issues (if it is stored in memory)

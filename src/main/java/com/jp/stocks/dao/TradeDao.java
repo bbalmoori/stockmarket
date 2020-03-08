@@ -18,7 +18,7 @@ public interface TradeDao {
     /**
      * Persists a given instrument
      *
-     * @Param trade
+     * @param trade
      *      trade to save
      *
      * @return boolean if saved successfully
@@ -31,7 +31,7 @@ public interface TradeDao {
     /**
      * Delete a given trade
      *
-     * @Param trade
+     * @param trade
      *      trade to delete
      *
      *  @return boolean if removed successfully
@@ -47,10 +47,10 @@ public interface TradeDao {
     /**
      * Returns trades for a given instrument
      *
-     * @Param symbol
+     * @param symbol
      *      trades to retrieve for a symbol
      *
-     * @Param elapsedTime
+     * @param elapsedTime
      *      elapsed time for the trade to be retrieved
      *
      * @return List of trades
