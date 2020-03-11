@@ -14,6 +14,7 @@ Requirements
 ## Setup
 
 Building this project requires maven. All you need to do is import project as maven in IDE by pointing it to pom.xml.
+Please note that this project uses Lombok plugin, please install the plugin accordingly frrom here -> https://plugins.jetbrains.com/plugin/6317-lombok
 
 ## Dependencies
 
